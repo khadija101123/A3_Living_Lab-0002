@@ -12,8 +12,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <style>
+      .animation{
+  /* width: 100px;
+  height: 100px;
+  background-image: url("c2-assets/logo-header.png");
+  background-repeat: no-repeat; */
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: reverse;
+}
+
+@keyframes myfirst {
+  0%   { left: 0px; top: 0px;}
+  25%  { left: 200px; top: 0px;}
+  50%  { left: 200px; top: 200px;}
+  75%  { left: 0px; top: 200px;}
+  100% { left: 0px; top: 0px;}
+}
         .sora {
   font-family: "Sora", serif;
+  /* animation start */
+  
+
+  
   
 }
     </style>
@@ -25,7 +46,7 @@
             <!-- navbar start -->
         <nav class="md:container mx-auto px-3 py-3 lg:px-36 lg:py-6">
             <div class="navbar hidden lg:flex">
-                <div class="navbar-start hidden lg:flex">
+                <div class=" animation navbar-start hidden lg:flex">
                    <img src="c2-assets/logo-header.png" alt=""> 
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -122,14 +143,14 @@
           <section class="px-1 py-7 lg:p-36 bg-[#EFEBE3]">
             <h1 class="font-semibold text-4xl text-[#179800] pb-12 ">Popular Products</h1>
             <div class="lg:flex justify-between gap-6 ">
-              <div class=" bg-gradient-to-tl from-[#FFFFFF] to-[#53DB3A] w-2/5 rounded-lg">
+              <div class="card bg-gradient-to-tl from-[#FFFFFF] to-[#53DB3A]  lg:w-2/5 rounded-lg mb-6 lg:mb-0">
               <div class="text-left bg-[url('/c2-assets/vegetable-offer.png')] bg-right-bottom bg-no-repeat pl-8 pt-12 h-auto ">
                   <h2 class="font-normal text-[32] text-[#FFFFFF]">30% off</h2>
                   <p class="py-6">Discover a world of treats, toys, and <br> essentials handpicked for </p>
                   <button class="btn font-normal text-xl mb-44">Buy Now</button>
                </div>
               </div>
-              <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 w-3/5">
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:w-3/5">
                 <!-- grid card 1 -->
                 <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg ">
                   <div class="bg-[#EFEBE3] rounded-lg">
@@ -303,22 +324,44 @@
             </div>
            </section>
            <!-- arrival section end -->
+          
     </main>
     <footer>
-     <div class="bg-[#179800] grid grid-cols-1 lg:grid-cols-3 px-4 py-12 lg:px-36 lg:pt-96 lg:pb-36 gap-16">
+       <!-- challenge section start -->
+       <section class=" mx-4 lg:mx-36 ">
+        <div class="hero bg-[#EFEBE3] p-14 relative -mb-72 lg:-mb-52 rounded-xl ">
+          <div class="hero-content flex-col lg:flex-row gap-1 lg:gap-10">
+            <img
+              src="c2-assets/vegetable-busket.png"
+              class="max-w-sm rounded-lg shadow-2xl" />
+            <div class="text-center lg:text-justify">
+              <h1 class="text-5xl font-bold pt-8 lg:pt-0">Get Grocery News!</h1>
+              <p class="py-6">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <div>
+                <input type="email" placeholder="Enter email" class="input font-normal text-xs pr-72 text-[#C4C4C4]" />
+              </div>
+              <button class="btn bg-[#179800]  mt-9">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- challenge section end -->
+     <div class="bg-[#179800] grid grid-cols-1 lg:grid-cols-3 px-4 pb-12 pt-96 lg:px-36 lg:pb-36 lg:pt-96 gap-16">
       <div>
         <img src="c2-assets/logo-footer.png" alt="">
-        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        <p class="text-[#FFFFFF]">Discover a world of treats, toys, and <br>essentials handpicked for your furry <br> friends</p>
       </div>
-      <div class="items-center justify-center">
-        <ul>
+      <div>
+        <ul class="text-[#FFFFFF]">
           <li>Product</li>
-          <li>Service</li>
+          <li class="py-8">Service</li>
           <li>Contact us</li>
         </ul>
       </div>
-      <div>
-        <h5>Follow Us</h5>
+      <div class="grid grid-cols-1 place-content-end">
+        <h5 class="text-[#FFFFFF]">Follow Us</h5>
         <div class="flex gap-3 items-center">
           <img src="Images/facebook.png" alt="">
           <img src="Images/insta.png" alt="">
