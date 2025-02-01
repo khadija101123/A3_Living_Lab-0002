@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontstyle cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora {
+  font-family: "Sora", serif;
+  
+}
+    </style>
+    <title>Nature's Platter</title>
+</head>
+<body class="sora container mx-auto">
+    <header >
+        <div class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] ...">
+            <!-- navbar start -->
+        <nav class="md:container mx-auto px-3 py-3 lg:px-36 lg:py-6">
+            <div class="navbar hidden lg:flex">
+                <div class="navbar-start hidden lg:flex">
+                   <img src="c2-assets/logo-header.png" alt=""> 
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-normal
+                text-xl">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex items-center gap-5 font-normal text-xl">
+                   <div> <img src="Images/Frame 6.png" alt=""></div> 
+                    <div><img src="Images/Group.png" alt=""></div> 
+                    <a class="btn border-[#179800] bg-[#FFFFFF]">Login</a>
+                    <a class="btn bg-[#179800]">Register</a>
+                </div>
+            </div>
+            <div class="flex justify-between lg:hidden items-center px-3 py-3 border-2 border-[#179800] ">
+                <div class="navbar-start">
+                <img src="Images/mobile-nav-logo.png" alt=""> 
+                </div>
+                <div class="text-[#179800]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <!--banner start  -->
+        <div class="flex flex-col items-center gap-4 ">
+        <div class="px-3 pt-2 lg:px-96 lg:pt-16 flex flex-col items-center gap-4">
+            <h1 class="font-semibold text-5xl text-center 
+            ">Freshness <span  class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+            <p class="font-normal text-xl text-center px-3">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        </div>
+            <div><img src="c2-assets/hero-vegetables.png" alt=""></div>
+        </div>
+        <!-- banner end -->
+        </div>
+    </header>
+    <main>
+        <!-- services section start -->
+         <section>
+           <div class="md:container mx-auto mt-12 lg:mt-36 grid grid-rows-1 place-content-center gap-12 m-36">
+            <h2 class="font-semibold text-4xl text-[#179800] ">Services</h2>
+            
+        <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-6 ">
+          <!-- service card 1 -->
+            <div class="card bg-[#EFEBE3] w-96 shadow-sm pt-8 ">
+                <div class="avatar grid place-content-center">
+                    <div class="w-24 rounded-full bg-[#FFFFFF] p-3">
+                        <img src="c2-assets/service.png" alt=""> 
+                    </div>
+                  </div>
+                <div class="card-body text-center">
+                  <h2 class="text-center font-semibold text-2xl">24/7 Services </h2>
+                  <p class="font-light text-xl">"Exceptional service, customer-first approach, efficiency, and quality—delivering excellence every step of the way."</p>
+                </div>
+              </div>
+              <!-- service card 2 -->
+            <div class="card bg-[#EFEBE3] w-96 shadow-sm pt-8 ">
+                <div class="avatar grid place-content-center">
+                    <div class="w-24 rounded-full bg-[#FFFFFF] p-3">
+                        <img src="c2-assets/delivery.png" alt="">
+                    </div>
+                  </div>
+                <div class="card-body text-center">
+                  <h2 class="text-center font-semibold text-2xl">Fast Delivery </h2>
+                  <p class="font-light text-xl">"Swift, reliable, and on-time delivery—ensuring your orders reach you fast, hassle-free, and with care."</p>
+                </div>
+              </div>
+              <!-- service card 3 -->
+            <div class="card bg-[#EFEBE3] w-96 shadow-sm pt-8 ">
+                <div class="avatar grid place-content-center">
+                    <div class="w-24 rounded-full bg-[#FFFFFF] p-3">
+                        <img src="c2-assets/healthy.png" alt="">
+                    </div>
+                  </div>
+                <div class="card-body text-center">
+                  <h2 class="text-center font-semibold text-2xl">Healthy Products </h2>
+                  <p class="font-light text-xl">High-quality crafted products designed to exceed expectations and deliver ultimate satisfaction all time.</p>
+                </div>
+              </div>
+        </div>
+           </div>
+              
+         </section>
+         <!-- services section end -->
+
+         <!-- popular product section start -->
+           
+          <section class="px-1 py-7 lg:p-36 bg-[#EFEBE3]">
+            <h1 class="font-semibold text-4xl text-[#179800] pb-12 ">Popular Products</h1>
+            <div class="lg:flex justify-between gap-6 ">
+              <div class=" bg-gradient-to-tl from-[#FFFFFF] to-[#53DB3A] w-2/5 rounded-lg">
+              <div class="text-left bg-[url('/c2-assets/vegetable-offer.png')] bg-right-bottom bg-no-repeat pl-8 pt-12 h-auto ">
+                  <h2 class="font-normal text-[32] text-[#FFFFFF]">30% off</h2>
+                  <p class="py-6">Discover a world of treats, toys, and <br> essentials handpicked for </p>
+                  <button class="btn font-normal text-xl mb-44">Buy Now</button>
+               </div>
+              </div>
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 w-3/5">
+                <!-- grid card 1 -->
+                <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg ">
+                  <div class="bg-[#EFEBE3] rounded-lg">
+                      <img src="Images/Onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex justify-start gap-2 items-center">
+                     <img src="Images/star.png" alt="">
+                    <p>4.5</p>
+                    </div>
+                    <h3 class="font-medium text-xl">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                   </div>
+  
+              </div>
+              <!-- grid card-2 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg ">
+                <div class="bg-[#EFEBE3] rounded-lg">
+                    <img src="Images/Onion.png" alt="">
+                </div>
+                <div>
+                 <div class="flex justify-start gap-2 items-center">
+                  <img src="Images/star.png" alt="">
+                 <p>4.5</p>
+                 </div>
+                 <h3 class="font-medium text-xl">Onion 1 KG</h3>
+                 <p>$39.99</p>
+                </div>
+  
+              </div>
+              <!-- grid card 3 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+              <div class="bg-[#EFEBE3] rounded-lg">
+                  <img src="Images/Onion.png" alt="">
+              </div>
+              <div>
+               <div class="flex justify-start gap-2 items-center">
+                <img src="Images/star.png" alt="">
+               <p>4.5</p>
+               </div>
+               <h3>Onion 1 KG</h3>
+               <p>$39.99</p>
+              </div>
+  
+              </div>
+              <!-- grid card 4 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+            <div class="bg-[#EFEBE3] rounded-lg">
+                <img src="Images/Onion.png" alt="">
+            </div>
+            <div>
+             <div class="flex justify-start gap-2 items-center">
+              <img src="Images/star.png" alt="">
+             <p>4.5</p>
+             </div>
+             <h3 class="font-medium text-xl">Onion 1 KG</h3>
+             <p>$39.99</p>
+            </div>
+  
+              </div>
+              <!-- grid card 5 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+          <div class="bg-[#EFEBE3] rounded-lg">
+              <img src="Images/Onion.png" alt="">
+          </div>
+          <div>
+           <div class="flex justify-start gap-2 items-center">
+            <img src="Images/star.png" alt="">
+           <p>4.5</p>
+           </div>
+           <h3 class="font-medium text-xl">Onion 1 KG</h3>
+           <p>$39.99</p>
+          </div>
+  
+              </div>
+              <!-- grid card 6 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+        <div class="bg-[#EFEBE3] rounded-lg">
+            <img src="Images/Onion.png" alt="">
+        </div>
+        <div>
+         <div class="flex justify-start gap-2 items-center">
+          <img src="Images/star.png" alt="">
+         <p>4.5</p>
+         </div>
+         <h3 class="font-medium text-xl">Onion 1 KG</h3>
+         <p>$39.99</p>
+        </div>
+  
+              </div>
+              <!-- grid card 7 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+      <div class="bg-[#EFEBE3] rounded-lg">
+          <img src="Images/Onion.png" alt="">
+      </div>
+      <div>
+       <div class="flex justify-start gap-2 items-center">
+        <img src="Images/star.png" alt="">
+       <p>4.5</p>
+       </div>
+       <h3 class="font-medium text-xl">Onion 1 KG</h3>
+       <p>$39.99</p>
+      </div>
+  
+              </div>
+              <!-- grid card 8 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+    <div class="bg-[#EFEBE3] rounded-lg">
+        <img src="Images/Onion.png" alt="">
+    </div>
+    <div>
+     <div class="flex justify-start gap-2 items-center">
+      <img src="Images/star.png" alt="">
+     <p>4.5</p>
+     </div>
+     <h3 class="font-medium text-xl">Onion 1 KG</h3>
+     <p>$39.99</p>
+    </div>
+  
+              </div>
+              <!-- grid card 9 -->
+              <div class="flex justify-between items-center p-4 bg-[#FFFFFF]  rounded-lg">
+    <div class="bg-[#EFEBE3] rounded-lg">
+        <img src="Images/Onion.png" alt="">
+    </div>
+    <div>
+     <div class="flex justify-start gap-2 items-center">
+      <img src="Images/star.png" alt="">
+     <p>4.5</p>
+     </div>
+     <h3 class="font-medium text-xl">Onion 1 KG</h3>
+     <p>$39.99</p>
+    </div>
+  
+              </div>
+            </div>
+              </div>
+          </section>
+          <!--popular product section end  -->
+          <!-- arrival section start -->
+           <section>
+
+            <div class="px-1 py-12 lg:p-36">
+              <h2 class="font-semibold text-4xl text-[#179800] pb-12 ">Arrival & Offers</h2>
+              <div class="grid grid-cols-1 lg:grid-cols-5 justify-start gap-3 lg:gap-5">
+                <!-- offers card 1 -->
+                <div class="flex justify-center gap-4 bg-[#115414] items-center pt-8 pl-10 col-span-3 rounded-xl">
+                  <div>
+                    <img src="c2-assets/dawat-logo.png" alt="">
+                    <button class="btn bg-[#63B76D] text-[#FFFFFF] font-normal text-2xl border-none my-7">Cook Exotic Dishes</button>
+                    <h1 class="font-normal text-3xl text-[#FFFFFF]">UP to <span class="font-bold">20% OFF</span></h1>
+                  </div>
+                  <div>
+                    <img src="c2-assets/dawat-mock-up.png" alt="">
+                  </div>
+                
+                </div>
+                 <!-- offers card 2 -->
+                <div class="flex justify-center gap-4 bg-[#102861] items-center pt-8 pl-10 col-span-2 rounded-xl">
+                  <div>
+                    <img src="c2-assets/india-gate-logo.png" alt="">
+                    <button class="btn bg-[#2A4D97] text-[#FFFFFF] font-normal text-2xl border-none my-7">World’s No.1 Rice</button>
+                    <h1 class="font-normal text-3xl text-[#FFFFFF]">UP to <span class="font-bold">40% OFF</span></h1>
+                  </div>
+                  <div>
+                    <img src="c2-assets/india-gate-mock-up.png" alt="">
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+           </section>
+           <!-- arrival section end -->
+    </main>
+    <footer>
+     <div class="bg-[#179800] grid grid-cols-1 lg:grid-cols-3 px-4 py-12 lg:px-36 lg:pt-96 lg:pb-36 gap-16">
+      <div>
+        <img src="c2-assets/logo-footer.png" alt="">
+        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      </div>
+      <div class="items-center justify-center">
+        <ul>
+          <li>Product</li>
+          <li>Service</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow Us</h5>
+        <div class="flex gap-3 items-center">
+          <img src="Images/facebook.png" alt="">
+          <img src="Images/insta.png" alt="">
+          <img src="Images/linkedin.png" alt="">
+          <img src="Images/youtube.png" alt="">
+        </div>
+      </div>
+     </div>
+    </footer>
+    
+</body>
+</html>
